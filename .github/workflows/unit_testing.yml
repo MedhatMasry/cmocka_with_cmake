@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Unit Tests
         run: |
-          cmake --build build -C "Release"
+          cmake --build build --config "Release"
 
       - name: Execute Unit Tests
         run: |
