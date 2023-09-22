@@ -22,8 +22,8 @@ jobs:
         
       - name: configure cmake
         run: |
-          mkdir build && cd build
-          cmake -S . -G "MinGW Makefiles"
+          mkdir build
+          cmake -S . -B build -G "MinGW Makefiles"
 
       - name: Build Unit Tests
         run: |
