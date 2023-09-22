@@ -31,4 +31,4 @@ jobs:
 
       - name: Execute Unit Tests
         run: |
-          ctest --test-dir build -C "Release"
+          ctest --test-dir build -C "Release" -V
