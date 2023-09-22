@@ -24,13 +24,11 @@ jobs:
         run: |
           mkdir build && cd build
           cmake ..
-          # cmake --build . --config Release
 
       - name: Build Unit Tests
         run: |
-          cmake --build build --config Release
+          cmake --build build -C "Release"
 
       - name: Execute Unit Tests
         run: |
-          dir
           ctest --test-dir build -C "Release"
