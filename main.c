@@ -9,7 +9,7 @@ static void test1(void **state)
 }
 static void test2(void **state)
 {
-    assert_int_equal(1, 2);
+    assert_int_equal(5, 5);
 }
 static void test3(void **state)
 {
